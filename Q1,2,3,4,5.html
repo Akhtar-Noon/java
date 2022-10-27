@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        First Five Questions Javascript
+    </title>
+
+</head>
+<body>
+<h2>
+    Q1:BY Clicking the Button It Will Hide the below Text.
+</h2>
+<p id="hide">RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff RAndom STuff</p>
+<button type="button" onclick="document.getElementById('hide').style.display='none'">IF Above text Not needed click me!</button>
+
+<hr>
+
+<h2>
+Q2: Will Change Image on CLick
+</h2>
+<img id="get-image" src="first.png" />
+<button type="button" onclick="document.getElementById('get-image').src='smile.png'">IF you want to Smile Click ME!</button>
+
+<hr>
+
+
+<h2>
+    Q3: Will Change Text
+</h2>
+<p id="change-text">He noticed there were less boys who smoked! RAndom </p>
+<button type="button" onclick='document.getElementById("change-text").innerHTML= "She noticed there were less girls who like playing chess! RAndom"'>For Female Random Text Click ME!</button>
+
+<hr>
+
+<h2>
+    Q4: TO get Alert Click The below Button
+</h2>
+<button type="button" onclick='window.alert("Stay Strong brother,u got this")'>Motivation Alert!</button>
+
+<hr>
+<h2>
+    Q5 Toggle Text
+</h2>
+<p>Click the button to Toggle one text to another</p>
+
+<p><button onclick="mytoggle()">RAndom Stuff Click Me!</button></p>
+<p id="toggle">No-More Time-out for You</p>
+
+<script>
+function mytoggle() {
+  var a = document.getElementById("toggle");
+  if (a.innerHTML == "No-More Time-out for You") {
+    a.innerHTML = " You can have Time-out anytime!!!!!!!!!!!!!!!!!!!!!";
+  } else {
+    a.innerHTML = "No-More Time-out for You";
+  }
+}
+</script>
+<hr>
+</body>
+
+</html>

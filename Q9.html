@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2 style="text-align:center ;color:white;background-color:#988080;color:white;padding:30px; width:100%;height:200%;">Q9:   Find No. of Characters of input text </h2>
+
+    <div style="margin:0px 50px;background-color:#f0ffff;">
+      
+        <hr>
+        <input type="text" style="background-color:#ccb5b5;font-size:xx-large"id="input" oninput ="countcharac()">
+        <hr>
+        <p> Total Character in Text :</p>
+        <p id="output" style="color:black; font-size:x-large;background-color:#ccb5b5"> </p>
+        
+    </div>
+    <script>
+
+        function countcharac() {
+            var char;
+            char = document.getElementById("input");
+            document.getElementById("output").innerHTML = char.value.length;
+            
+
+
+        }
+    </script>
+</body>
+</html>

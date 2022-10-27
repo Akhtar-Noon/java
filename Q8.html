@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Q8</title>
+</head>
+<body>
+    <h2 style="text-align:center ;color:white;background-color:#988080;color:white;padding:30px; width:100%;height:200%;">Q8:   NAme Format </h2>
+    <div style="margin:auto auto;background-color:#f0ffff;">
+        <p> First Name: <input type="text" id="firstname" /></p>
+        <p> Last Name: <input type="text" id="lastname" /></p>
+        <p>
+            Format:<select  id="format">
+                <optgroup label="Name Format">
+                    <option value="first">First Name,Last Name</option>
+                    <option value="last">Last Name,First Name</option>
+                </optgroup>
+            </select>
+            <br>
+        </p>
+        
+        <button onclick="formatenamebyorder()" >Dispaly</button>
+     
+        <p> <strong>Desired Format Name:</strong></p>
+        <p id="output" style="background-color:#988080;max-width:40%; text-align:center;"></p> 
+    </div>
+    
+    <script>
+        function formatenamebyorder()
+        {
+            var intake;
+            intake = document.getElementById("format").value;
+            
+            if (intake ==="first") {
+
+                document.getElementById("output").innerHTML = document.getElementById("firstname").value + " " + document.getElementById("lastname").value;
+            }
+            else 
+                document.getElementById("output").innerHTML = document.getElementById("lastname").value + " " + document.getElementById("firstname").value;
+            
+
+
+        }
+      
+
+        
+    </script>
+
+
+
+</body>
+
+</html>
